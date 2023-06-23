@@ -1,1 +1,98 @@
 Bandit
+
+
+level 0
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+password bandit0
+ls 
+cat readme
+password   NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+level 0-1
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+password NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+ls 
+cat ./-
+password   rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+level 1-2
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+password rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+ls 
+cat spaces\ in\ this\ filename
+password   aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+level 2-3
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+password aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+ls 
+find inhere/
+cat inhere/.hidden
+password   2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+level 3-4
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+password 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+ls 
+find inhere/
+cat inhere/-file07
+password   lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+level 4-5
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+password lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+ls 
+find inhere/
+find -type f -size 1033c 
+cat ./inhere/maybehere07/.file2
+password   P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+level 5-6
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+password P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+find / -user bandit7 -group bandit6 -size 32c 2>dev/null/ 
+cat /var/lib/dpkg/info/bandit7.password
+password   z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+level 6-7
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+password z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+awk '/^millionth/ {print $2;}' data.txt
+password   TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+level 7-8
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+password TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+cat data.txt | sort | uniq -u
+
+password   EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+level 8-9
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+password EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+ls
+cat data.txt 
+
+password   G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+level 9-10
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+password G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+ls
+strings data.txt 
+
+password   6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+
+level 10-11
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+password 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+
+ls
+strings data.txt 
+
+password   WIAOOSFzMjXXBC0KoSKBbJ8puQm5lIEi
